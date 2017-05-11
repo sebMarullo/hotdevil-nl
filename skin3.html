@@ -26,6 +26,7 @@
 		<link href="/skins/bootstrap_skin/css/owl.carousel.css" rel="stylesheet"/>
 		<link href="/skins/bootstrap_skin/css/owl.theme.css" rel="stylesheet"/>
 
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700,900" rel="stylesheet"/>
         <link type="text/css" rel="stylesheet" style="myshop-resource-ref:style-sheet" href="base.css"/>
 		<link type="text/css" rel="stylesheet" style="myshop-resource-ref:style-sheet-theme" href="theme.css" />
 
@@ -38,34 +39,7 @@
 
 		<!-- *** TOPBAR ***
 		_________________________________________________________ -->
-		<div id="top">
-			<div class="container">
-				<div style="myshop-value:header-text" class="col-md-6 offer myshp_slogan__text" data-animate="fadeInDown"></div>
-				<div class="col-md-6" data-animate="fadeInDown">
-					<ul style="myshop-repeat:header-link-list" class="myshop_level1 myshp_top_menu__list menu">
-						<li class="myshp_top_menu__item myshop_level1__li has-sub">
-							<a href="myshop-action:href" title="myshop-value:title" class="myshp_top_menu__link"><span style="myshop-value:link"></span></a>
-							<ul class="myshop_level2" style="myshop-repeat:header-link-list">
-								<li class="sub myshop_level2__li myshop-value:classname">
-									<a href="myshop-action:href"><span class="myshp_menu_main_item"><span style="myshop-value:link"></span></span></a>
-									<ul class="myshop_level3" style="myshop-repeat:header-link-list">
-										<li class="myshop-value:classname">
-											<a href="myshop-action:href"><span class="myshp_menu_main_item"><span style="myshop-value:link"></span></span></a>
-											<ul class="myshop_level4" style="myshop-repeat:header-link-list">
-												<li class="myshop-value:classname">
-													<a href="myshop-action:href"><span class="myshp_menu_main_item"><span style="myshop-value:link"></span></span></a>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-
-		</div>
+			
 
 		<!-- *** TOP BAR END *** -->
 
@@ -77,6 +51,8 @@
 				<div class="navbar-header">
 
 					<a class="navbar-brand home" href="myshop-value:page-logo-link" style="myshop-style-height:logo-height px; myshop-style-width:logo-width px; display:block;" data-animate-hover="bounce"> <img src="myshop-value:page-logo" alt="myShop Bootstrap Skin" class="hidden-xs"/> <img src="myshop-value:page-logo" alt="myShop Bootstrap Skin" class="visible-xs"/></a>
+
+					<div style="myshop-value:header-text" class="col-md-10 offer myshp_slogan__text" data-animate="fadeInDown"></div>
 					<div class="navbar-buttons">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
 							<span class="sr-only">Toggle navigation</span>
@@ -90,52 +66,41 @@
 					</div>
 				</div>
 				<!--/.navbar-header -->
+			</div>
 
-				<nav class="navbar-collapse collapse" id="navigation">
-					<ul class="nav navbar-nav navbar-left" style="myshop-repeat:header-top-menu-items">
-						<li class="myshop-value:classname dropdown yamm-fw">
-							<a href="myshop-action:href" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200"><span style="myshop-value:link"></span><b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li class="myshop-value:classname">
-									<div class="yamm-content">
-										<div class="row" style="myshop-repeat:header-top-menu-items">
-											<div class="col-sm-3">
-												<h5><a href="myshop-action:href"><span style="myshop-value:link"></span></a></h5>
-												<ul style="myshop-repeat:header-link-list">
-													<li class="myshop-value:classname">
-														<a href="myshop-action:href"><span style="myshop-value:link"></span></a>
-														<ul style="myshop-repeat:header-link-list">
-															<li class="myshop-value:classname">
-																<a href="myshop-action:href"><span style="myshop-value:link"></span></a>
-															</li>
-														</ul>
-													</li>
-												</ul>
+			<div class="back_sm1">
+				<div class="container">
+					<nav class="navbar-collapse collapse" id="navigation">
+						<ul class="nav navbar-nav navbar-left" style="myshop-repeat:header-top-menu-items">
+							<li class="myshop-value:classname dropdown yamm-fw">
+								<a href="myshop-action:href" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200"><span style="myshop-value:link"></span><b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li class="myshop-value:classname">
+										<div class="yamm-content">
+											<div class="row" style="myshop-repeat:header-top-menu-items">
+												<div class="col-sm-3">
+													<h5><a href="myshop-action:href"><span style="myshop-value:link"></span></a></h5>
+													<ul style="myshop-repeat:header-link-list">
+														<li class="myshop-value:classname">
+															<a href="myshop-action:href"><span style="myshop-value:link"></span></a>
+															<ul style="myshop-repeat:header-link-list">
+																<li class="myshop-value:classname">
+																	<a href="myshop-action:href"><span style="myshop-value:link"></span></a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
 											</div>
 										</div>
-									</div>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-				<!--/.nav-collapse -->
-
-				<div class="navbar-buttons">
-
-					<div class="navbar-collapse collapse right" id="basket-overview">
-						<a style="myshop-action:goto-basket"  class="btn btn-primary navbar-btn"><i class="icon-shopping-cart"></i>&nbsp;<span style="myshop-basket:count" class="hidden-sm">3 items in cart</span></a>
-					</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
 					<!--/.nav-collapse -->
-
-					<div class="navbar-collapse collapse right" id="search-not-mobile">
-						<button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
-							<span class="sr-only">Toggle search</span>
-							<i class="icon-search"></i>
-						</button>
-					</div>
-
 				</div>
+			</div>
 
 				<div class="collapse clearfix" id="search">
 
@@ -153,7 +118,6 @@
 				</div>
 				<!--/.nav-collapse -->
 
-			</div>
 			<!-- /.container -->
 		</div>
 		<!-- /#navbar -->
@@ -162,10 +126,10 @@
 
 		<div id="all">
 
-			<div id="content">
+			<div id="content" class="container">
 
 						<div style="myshop-has:components row2 col1">
-							<div class="myshp_col1 myshp_col col-md-3">
+							<div class="myshp_col1 myshp_col">
 									<section style="myshop-repeat:components row2 col1">
 										<div class="myshp_side_basket myshp_block" style="myshop-block:side-menu-basket-info">
 											<h3 class="myshp_side_basket__title">
@@ -322,6 +286,7 @@
 							</div>
 						</div>
 
+						<div class="clear"></div>
 				
 
 				
