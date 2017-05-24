@@ -20,17 +20,17 @@
 		<link type="text/css" rel="stylesheet" href="/views/library/jquery/plugins/jquery.plugins.css" />
 
 		<!-- styles -->
-		<link href="/skins/responsive_master/fonts/font-awesome.css" rel="stylesheet"/>
-		<link href="/skins/bootstrap_skin/css/bootstrap.min.css" rel="stylesheet"/>
-		<link href="/skins/bootstrap_skin/css/animate.min.css" rel="stylesheet"/>
-		<link href="/skins/bootstrap_skin/css/owl.carousel.css" rel="stylesheet"/>
-		<link href="/skins/bootstrap_skin/css/owl.theme.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+		<link href="/skins/bootstrap_skin/css/app.css" rel="stylesheet"/>
 
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700,900" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700,900" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet"/>
         <link type="text/css" rel="stylesheet" style="myshop-resource-ref:style-sheet" href="base.css"/>
 		<link type="text/css" rel="stylesheet" style="myshop-resource-ref:style-sheet-theme" href="theme.css" />
 
-		<script src="/skins/responsive_master/js/libs/2016/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.1.0/jquery.browser.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
 		<script src="/skins/bootstrap_skin/js/respond.min.js"></script>
 
 	</head>
@@ -56,13 +56,13 @@
 					<div class="navbar-buttons">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
 							<span class="sr-only">Toggle navigation</span>
-							<i class="icon-align-justify"></i>
+							<i class="fa fa-align-justify"></i>
 						</button>
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#search">
 							<span class="sr-only">Toggle search</span>
-							<i class="icon-search"></i>
+							<i class="fa fa-search"></i>
 						</button>
-						<a style="myshop-action:goto-basket"  class="btn btn-default navbar-toggle"> <i class="icon-shopping-cart"></i> <span class="hidden-xs" style="myshop-basket:count" >3 items in cart</span> </a>
+						<a style="myshop-action:goto-basket"  class="btn btn-default navbar-toggle"> <i class="fa fa-shopping-cart"></i> <span class="hidden-xs" style="myshop-basket:count" >3 items in cart</span> </a>
 					</div>
 				</div>
 				<!--/.navbar-header -->
@@ -97,8 +97,19 @@
 								</ul>
 							</li>
 						</ul>
+
 					</nav>
 					<!--/.nav-collapse -->
+					<div class="navbar-buttons">
+
+						<div class="navbar-collapse collapse left" id="basket-overview">
+							<a style="myshop-action:goto-basket"  class="btn btn-primary navbar-btn">
+								<i class="fa fa-shopping-cart"></i>
+								<span class="total_bask" style="myshop-basket:inc-vat-price-subtotal-formatted">? 0,00</span>
+							</a>
+						</div>
+
+					</div>
 				</div>
 			</div>
 
@@ -109,7 +120,7 @@
 							<input style="myshop-control:quick-search" placeholder="snel zoeken" type="search" id="search" value="" class="myshp_side_search__input form-control"/>
 							<span class="input-group-btn">
 								<a href="#" style="myshop-action:quick-search" class="myshp_button myshp_quicksearch myshp_side_search__button btn btn-primary" data-role="button" data-inline="true" data-icon="search" data-mini="true" data-iconpos="right">
-									<i class="icon-search"></i>
+									<i class="fa fa-search"></i>
 								</a>
 							</span>
 						</div>
@@ -293,43 +304,51 @@
 
 			</div>
 			<!-- /#content -->
-
-			<!-- *** FOOTER ***
-			_________________________________________________________ -->
-			
-			<footer id="footer" data-animate="fadeInUp" class="myshp_footer" data-role="footer">
-				<div class="container">
-					<div class="row myshp_footer__list" style="myshop-repeat:footer-link-list">
-						<div class="col-md-3 col-sm-6">
-							<h4><a href="myshop-action:href"><span style="myshop-value:link"></span></a></h4>
-
-							<ul style="myshop-repeat:footer-link-list" class="myshp_second_level">
-								<li>
-									<a href="myshop-action:href"><span style="myshop-value:link"></span></a>
-								</li>
-							</ul>
-							<hr/>
-							<hr class="hidden-md hidden-lg hidden-sm"/>
-
-						</div>
-
-					</div>
-
-				</div>
-			</footer>
-			<!-- /#footer -->
-
-			<!-- *** FOOTER END *** -->
-
 			<!-- *** COPYRIGHT ***
 			_________________________________________________________ -->
-			<div id="copyright">
-				<div class="container">
-					<div class="myshp_footer_text col-md-6" style="myshop-has-value:footer-text">
-						<div class="container pull-left" style="myshop-value:footer-text"></div>
+			<footer id="footer" data-animate="fadeInUp" class="myshp_footer" data-role="footer">
+				<div id="copyright">
+					<div class="container">
+						<div class="row">
+							<div class="myshp_footer_text col-md-3 col-sm-12" style="myshop-has-value:footer-text">
+								<div style="myshop-value:footer-text"></div>
+							</div>
+							<div class="myshp_footer__list col-md-3 col-sm-12" style="myshop-repeat:footer-link-list">
+								<h4><a href="myshop-action:href"><span style="myshop-value:link"></span></a></h4>
+
+								<ul style="myshop-repeat:footer-link-list" class="myshp_second_level">
+									<li>
+										<a href="myshop-action:href"><span style="myshop-value:link"></span></a>
+									</li>
+								</ul>
+							</div>
+							<div class="myshp_footer_text col-md-3 col-sm-12">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.6711921011515!2d4.418903015399128!3d51.35395527961021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c40ec95642d231%3A0xdf3819a69d3aa558!2sKlinkaardstraat+210%2C+2950+Kapellen%2C+B%C3%A9lgica!5e0!3m2!1ses-419!2sar!4v1494611412284" width="262" height="240" frameborder="0" style="border:0"></iframe>
+								<div>
+									Klinkaardstraat 210, 2950 Kapellen Belgi&#235;
+								</div>
+							</div>
+							<div class="myshp_footer_text col-md-3 col-sm-12">
+								<img src="https://plugin.myshop.com/images/shop5635300.images.footer_paymment.png"/>
+								<ul class="social_footer_links">
+								
+									<li>
+										<a href=""><i class="fa-facebook fa"></i></a>
+									</li>
+									<li>
+										<a href=""><i class="fa-twitter fa"></i></a>
+									</li>
+									<li>
+										<a href=""><i class="fa-google fa"></i></a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
+
+			</footer>
 			<!-- *** COPYRIGHT END *** -->
 
 		</div>
@@ -344,6 +363,8 @@
 		<script src="/skins/bootstrap_skin/js/owl.carousel.min.js"></script>
 		<script src="/skins/bootstrap_skin/js/front.js"></script>
 		<script src="/skins/bootstrap_skin/js/bootstrap-hover-dropdown.js"></script>
+
+
 
 	</body>
 

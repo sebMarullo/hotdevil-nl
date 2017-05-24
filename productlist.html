@@ -100,6 +100,15 @@
 
 		<!-- Begin - Product list Search block -->
 		<div class="box">
+			<table>
+				<tr>
+					<td>
+						<h2>
+							Producten
+						</h2>		
+					</td>
+				</tr>
+			</table>
 			<table width="100%" class="table-condensed"><tr><td>
 			<div style="myshop-has:searchblock;">
 				<div style="myshop-is:search-method-quick">
@@ -218,7 +227,7 @@
                         <div class="col-md-4 col-sm-6">
 							<div style="myshop-block:product;" class="myshp_list_product product" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/Product">
 								<div class="myshp_list_product_box">
-									
+									<div class="img_content_sm">
 										<div class="flip-container">
 											<!-- Begin - Product Image -->
 											<div class="myshp_list_product_image_box myshp_list_product_image flipper">
@@ -252,13 +261,15 @@
 														</span>
 													</span>
 												</span>
+												<div class="clear">													
+												</div>
 											</div>
 											<!-- End - Product Image -->
 										</div>
 										<a style="myshop-action:moreinfo;" class="myshp_list_product_image invisible">
 											<img class="img-responsive" src="myshop-product:image;" alt="myshop-product:title;" itemprop="myshop-product:itemprop-image"/>
 										</a>
-									
+									</div>
 									
 										<div class="text">
 											<!-- Begin - Product Title -->
@@ -499,20 +510,27 @@
 							if (jQuery(this).height() > currentTallest) { currentTallest = jQuery(this).height(); }
 						});
 						jQuery(this).find('h3').css({'min-height': currentTallest});
-						
-						/*Set Product Image height*/
-						currentTallest = 0;
-						jQuery(this).find('.myshp_list_product_image').each(function(i){
-							if (jQuery(this).height() > currentTallest) { currentTallest = jQuery(this).height(); }
-						});
-						jQuery(this).find('.myshp_list_product_image').css({'min-height': currentTallest});
-		
+								
 						/* Set Product Features Height */
 						currentTallest = 0;
 						jQuery(this).find('.myshp_list_product_features').each(function(i){
 							if (jQuery(this).height() > currentTallest) { currentTallest = jQuery(this).height(); }
 						});
 						jQuery(this).find('.myshp_list_product_features').css({'min-height': currentTallest});
+
+						/* Set Product Features Height */
+						currentTallest = 0;
+						jQuery(this).find('.img_content_sm').each(function(i){
+							if (jQuery(this).height() > currentTallest) { currentTallest = jQuery(this).height(); }
+						});
+						jQuery(this).find('.img_content_sm').css({'min-height': currentTallest});
+						
+						/* Set Product Features Height */
+						currentTallest = 0;
+						jQuery(this).find('.myshp_list_product_value').each(function(i){
+							if (jQuery(this).height() > currentTallest) { currentTallest = jQuery(this).height(); }
+						});
+						jQuery(this).find('.myshp_list_product_value').css({'min-height': currentTallest});
 						
 					});
 					return this;
